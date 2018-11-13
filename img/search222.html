@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <title>w33333</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700');
+    </style>
+ 
+    
+</head>
+<body>
+
+<p>Looping through arrays inside arrays.</p>
+
+<div id="demo" class="row"></div>
+
+
+
+<script>
+var myObj, i, j, x = "";
+myObj=
+for (i in myObj.items) {
+    x += "   <div style='width:950px; height:120px; padding:5px; margin:5px; background-color: #ccc;'> <div style='height: 100px; width: 800px; background-color: rgba(0,0,0, 0.3); margin:5px;float:left;'> <div style='height: 40px; width: 750px; background-color: rgba(0,255,0, 0.3); margin:5px; padding: 5px;'>Name: <span style='float:right;'>" + myObj.items[i].title + "</span> </div> <div style='height: 40px; width: 750px; background-color: rgba(255,0,0, 0.3); margin:5px; padding: 5px;'>Found on: <span style='float:right;'>" + myObj.items[i].link + "</span> </div> </div> <div style='height: 100px; width: 100px; background-color: rgba(0,0,0, 0.9); margin:5px;float:right;'></div> </div>";
+      
+    
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+

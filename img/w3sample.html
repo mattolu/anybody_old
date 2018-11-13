@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Looping through arrays inside arrays.</p>
+
+<p id="demo"></p>
+
+<script>
+var myObj, i, j, x = "";
+myObj={
+    "items": [
+        {
+            "title": "Taoreed Abodunrin | Facebook",
+            "link": "https://www.facebook.com/taoreed.abodunrin",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/s200x200/1391882_250403305108843_1808665555_n.jpg?_nc_cat=0&oh=d4c39beecb1d6ca4a033f1fc4c732319&oe=5C2E0FD3"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "iVO Thinking | LinkedIn",
+            "link": "https://www.linkedin.com/company/ivothinking",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://media.licdn.com/dms/image/C4D0BAQHZfsyoOhA_7Q/company-logo_200_200/0?e=2159024400&v=beta&t=1H7E0Coe2bO88c_3OAnQB2xnbjSMXImILsS4rE8zW30"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Sekoutoure Abodunrin | Facebook",
+            "link": "https://www.facebook.com/sekoutoure",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/s200x200/16684219_10154150342781175_90004280958724816_n.jpg?_nc_cat=103&_nc_ht=scontent-atl3-1.xx&oh=0c4f4234b7dbdf8ad0b15d609716f9e4&oe=5C47AD49"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Matthew Kenny | Facebook",
+            "link": "https://www.facebook.com/Combatkenny",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/s200x200/1511913_1379043159056480_1865289926876399292_n.jpg?_nc_cat=100&_nc_ht=scontent-iad3-1.xx&oh=3c12cb2f437d99bd2e7f2216f5fb394e&oe=5C80D597"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Adeoye Abodunrin - Home | Facebook",
+            "link": "https://www.facebook.com/CoachDeoking/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1583456865240731"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Gbenga Abodunrin - Dr - LAUTECH OGBOMOSO | LinkedIn",
+            "link": "https://www.linkedin.com/in/gbenga-abodunrin-ab096031",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://media.licdn.com/dms/image/C5603AQGvWsoePamO-w/profile-displayphoto-shrink_200_200/0?e=1544659200&v=beta&t=3IbdptmREs7uinx2MetE_NoBsTvVi4d-VUuoYD5Ly_k"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Abodunrin Temitope - Teller Service Representative - SECU Credit ...",
+            "link": "https://www.linkedin.com/in/abodunrin-temitope-45672953",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://image-store.slidesharecdn.com/3982d740-0d98-4fae-a279-483b6166839e-original.jpeg"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Abodunrin Oladipupo Babatunde | LinkedIn",
+            "link": "https://www.linkedin.com/in/abodunrin-oladipupo-babatunde-3387633a",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=0gkslqLynbajb17IxonluerXYmU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6j3QIOyxEmrq2OoACm7QhPSbHjJnOhB3bzocrYISO8L5aaJfa__h1B"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Teller at First Bank Of Nigeria Plc | Profiles, Jobs, Skills, Articles ...",
+            "link": "https://www.linkedin.com/titleteller-at-first-bank-of-nigeria-plc"
+        },
+        {
+            "title": "ADMISSION LIST FOR SCIENCE S/N NAME... - FUNAAB ...",
+            "link": "https://www.facebook.com/234226209980619/posts/admission-list-for-sciencesnname-surname-firstsex1abatan-sheriffdeen-om2abayomi-/380965471973358/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=234226209980619"
+                    }
+                ]
+            }
+        }
+    ]
+}
+for (i in myObj.items) {
+var one =myObj.items[i];
+    x += "<h2>" + one.title + "</h2>";
+     x += "<h2>" + one.link + "</h2>";
+     if(one.pagemap ){
+     x += "<img src='"+(one.pagemap.cse_image[0].src) + "'><br>";
+     }
+     else
+     x += "" + "<br>";
+     
+    
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+

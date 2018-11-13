@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/any.css">
+    <title>Anybody</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700');
+    </style>
+ 
+    
+</head>
+
+<body>
+	<!-- <div class="containera">
+		<input type="text" name="search" id="searchQuery" class="form-control">
+		<input class="btn btn-default" type="submit" placeholder="SUBMIT" id="startSearch"> -->
+
+	<!-- </div>
+	<div id="content"></div>
+	 <script src="js/jquery.js"></script>  -->
+
+<form action="curlphp.php" method="GET">Search <input type="text" name="searchQuery">
+			<input type="submit" value="Search"><br>
+</form>
+<div id="content"></div>
+
+
+
+      <!-- <script>
+    	function getResult(search){
+		 $.getJSON(result, function (data) {
+			    $("#content").html(JSON.stringify(data));
+			});			
+    	}
+    	$("#startSearch").click(function(){
+    		var query = $("#searchQuery").val();
+    		getResult(query);
+    	});
+	</script>  -->
+
+</body>
+</html>
+
+
